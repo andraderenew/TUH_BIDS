@@ -31,13 +31,11 @@ channel_mapping = {
     'EEG FP1-LE': 'FP1', 'EEG F7-LE': 'F7', 'EEG T3-LE': 'T3', 'EEG T5-LE': 'T5',
     'EEG FP2-LE': 'FP2', 'EEG F8-LE': 'F8', 'EEG T4-LE': 'T4', 'EEG T6-LE': 'T6',
     'EEG A1-LE': 'A1', 'EEG C3-LE': 'C3', 'EEG CZ-LE': 'Cz', 'EEG C4-LE': 'C4',
-    'EEG F3-LE': 'F3', 'EEG P3-LE': 'P3', 'EEG F4-LE': 'F4', 'EEG P4-LE': 'P4',
-    'EEG A2-LE': 'A2', 'EEG O1-LE': 'O1', 'EEG O2-LE': 'O2',
-    'EEG FZ-LE': 'Fz', 'EEG PZ-LE': 'Pz', 'EEG OZ-LE': 'Oz',
-    'EEG PG1-LE': 'PG1', 'EEG PG2-LE': 'PG2', 'EEG EKG-LE': 'EKG',
-    'EEG SP2-LE': 'SP2', 'EEG SP1-LE': 'SP1', 'EEG RLC-LE': 'RLC',
-    'EEG LUC-LE': 'LUC', 'EEG 30-LE': '30', 'EEG T1-LE': 'T1',
-    'EEG T2-LE': 'T2',
+    'EEG F3-LE': 'F3', 'EEG P3-LE': 'P3', 'EEG F4-LE': 'F4', 'EEG P4-LE': 'P4', 
+    'EEG A2-LE': 'A2', 'EEG O1-LE': 'O1', 'EEG O2-LE': 'O2', 'EEG FZ-LE': 'Fz', 
+    'EEG PZ-LE': 'Pz', 'EEG OZ-LE': 'Oz','EEG PG1-LE': 'PG1', 'EEG PG2-LE': 'PG2', 
+    'EEG EKG-LE': 'EKG', 'EEG SP2-LE': 'SP2', 'EEG SP1-LE': 'SP1', 'EEG RLC-LE': 'RLC', 
+    'EEG LUC-LE': 'LUC', 'EEG 30-LE': '30', 'EEG T1-LE': 'T1', 'EEG T2-LE': 'T2',
 }
 
 raw.rename_channels(channel_mapping)
