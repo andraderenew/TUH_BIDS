@@ -1,5 +1,5 @@
 # TUH_BIDS
-Code that converts the EEG epilepsy TUEP corpus of the repository to BIDS format. 
+Code that converts the EEG epilepsy TUEP corpus of the repository to BIDS format (if you want to use it in your data see point 5). 
 
 Requirements to test this code (see further specifications below):
 
@@ -9,11 +9,9 @@ Requirements to test this code (see further specifications below):
 
 3. Modify the paths depending on your subject ID, or path to save the output files.
 
-4. For the codes I have used a patient with montage 02_tcp_le_montage (linked-ears) meaning if you use a patient different than the one listed you should verify to have the same montage type. There are 4 types named:
-01_tcp_ar_montage,
-02_tcp_le_montage,
-03_tcp_ar_a_montage,
-04_tcp_le_a_montage. 
+4. For the codes I have used a patient with montage 02_tcp_le_montage (linked-ears) meaning if you use a patient different than the one listed you should verify to have the same montage type. There are 4 types named: 01_tcp_ar_montage, 02_tcp_le_montage, 03_tcp_ar_a_montage, 04_tcp_le_a_montage. Other montages will possibly be used in another code future release to be announced soon.
+
+5. If you wanted to use this in another data other than TUH Epilepsy database. Then possibly you could try eeg data from this tutorial. https://mne.tools/mne-bids/dev/auto_examples/convert_eeg_to_bids.html. 
 
 
 Further specifications:
@@ -34,7 +32,9 @@ Paths to change in ... :
 ... "several-edfs_one-patient_several-sessions&runs_EDF2BIDS_file_conversion.py"
 1) edf_directory --> path to edf files saved from TUH database
 2) root --> path to output of BIDS format files
-3) in "raw.save" line 62 change /Users/andraderenew/Downloads/TUH_EEG/{session_id}.fif to whatever the path you will save the files in FIF format (EEG format file of MNE). 
+3) in "raw.save" line 62 change /Users/andraderenew/Downloads/TUH_EEG/{session_id}.fif to whatever the path you will save the files in FIF format (EEG format file of MNE).
+
+5. Then change the paths as indicated in point 3 in further  specifications. Although the montage you will need to change as well. Probably you should comment all the lines referring to this part of channel mappings. You can use the code in the tutorial to adapt it your montage. 
 
 It has been tested in:
 macOS-14.2.1-arm64-arm-64bit
