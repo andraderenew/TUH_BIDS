@@ -1,21 +1,13 @@
-# Authors: Stefan Appelhoff <stefan.appelhoff@mailbox.org>
+# Authors: Rene Andrade Rey <rene.andrade@edu.uah.es>
 #
-# License: BSD-3-Clause
+# License: MIT
 
 # We import necessary libraries
 import os.path as op
 import shutil
-
 import mne
-from mne.datasets import eegbci
-
 from mne_bids import write_raw_bids, BIDSPath, print_dir_tree
 from mne_bids.stats import count_events
-
-# Download the EEG data from PhysioBank
-# -------------------------------------
-# Here we download EEG data from the PhysioBank database.
-# We will be working with a dataset containing experimental runs related to eye movement and motor imagery tasks.
 
 # Load the EEG data and set power line frequency
 edf_path = '/Users/andraderenew/Downloads/TUH_EEG/aaaaaaac_s002_t000.edf'
