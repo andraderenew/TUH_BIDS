@@ -1,3 +1,7 @@
+# Authors: Rene Andrade Rey <rene.andrade@edu.uah.es>
+#
+# License: MIT
+
 import os  # Importing the 'os' module for operating system related functionalities
 import mne  # Importing the 'mne' library for EEG/MEG data analysis
 from mne.datasets import eegbci  # Importing EEGBCI dataset functionality from 'mne.datasets'
